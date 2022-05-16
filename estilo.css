@@ -13,12 +13,13 @@ header{
 .gridContainer{
     display:grid;
     grid-template-columns:1fr;
-    grid-template-rows: repeat(3, 1fr);
-    grid-gap:5px;
+    grid-template-rows: repeat(3,fit-content );
+    
 }
 /*Fim da Grid*/
 .gridItem{
-    height:88px;
+    height:fit-content;
+    
 }
 .menuflex{
     display:flex;
@@ -65,6 +66,7 @@ header{
     display:flex;
     width:80%;
     margin:50px auto;
+    
 }
 .flexSection img{
     margin-right:10px;
@@ -121,6 +123,8 @@ form{
 }
 .form_section{
     background-color: #D2D2D2;
+    height:350px;
+    margin-bottom: 0;
 }
 .div_form{
     width:fit-content;
@@ -159,6 +163,52 @@ button:hover{
     color:#302836;
     font-weight: bolder;
 }
+.section_footer{
+    background-image:linear-gradient(to right,#302836 55%, rgb(148, 70, 46) );
+    margin-top: 0px;
+    padding: 15px 100px;
+}
+.flex_article_footer{
+    display:flex;
+    justify-content: space-between;
+}
+.article_footer{
+    flex-direction: row;
+    width: 400px;
+}
+hr{
+    height:1px;
+    background-color: white;
+}
+.article_footer h1, p{
+    text-align: justify;
+    
+}
+.footer_end{
+    display:flex;
+    justify-content: space-between; 
+}
+.flexitem_footer{
+   flex-direction: row;
+   margin-bottom:0px;
+   padding-bottom:0px;
+   height: fit-content;
+   
+}
+.flex_a{
+    margin-top:20px;
+}
+.flex_a a{
+    text-decoration: none;
+    color:white;
+    margin-left:10px;
+    
+}
+.flex_a a:hover{
+    font-weight: bolder;
+}
+
+
 
 
 
